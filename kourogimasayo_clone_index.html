@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>スピ哲学であそぶBlog — クローン (Sample)</title>
+  <meta name="description" content="サンプル：kourogimasayo.com の見た目を再現した静的サイトテンプレート" />
+  <style>
+    :root{--bg:#ffffff;--muted:#697d6f;--accent:#dfeee6;--accent-2:#bfe6c8}
+    *{box-sizing:border-box}
+    body{font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;line-height:1.65;margin:0;color:#222;background:var(--bg)}
+    header{background:linear-gradient(180deg,var(--accent),#fff);border-bottom:1px solid #e6ece2;padding:28px}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    .site-title{font-size:28px;margin:0;color:#15402a}
+    nav{margin-top:10px}
+    nav a{color:#15402a;text-decoration:none;margin-right:14px;font-weight:600}
+    .hero{display:flex;gap:18px;align-items:flex-start;margin:22px 0}
+    .profile{flex:0 0 220px;background:#fff;border-radius:10px;padding:16px;border:1px solid #e7efe5}
+    .profile h2{margin:6px 0 12px;font-size:18px}
+    .profile p{margin:0;color:var(--muted);font-size:14px}
+    .content{flex:1}
+    .post{background:#fff;border-radius:10px;padding:16px;margin-bottom:14px;border:1px solid #eef6ee}
+    .post h3{margin:0 0 8px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+    footer{padding:24px;border-top:1px solid #e6ece2;text-align:center;color:var(--muted);background:#fbfff9}
+    /* responsive */
+    @media(max-width:720px){.hero{flex-direction:column}.profile{width:100%}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="site-title">スピ哲学であそぶBlog</h1>
+      <nav aria-label="メインナビ">
+        <a href="#">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#blog">Blog</a>
+        <a href="#links">Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <aside class="profile" id="profile">
+        <h2>興梠 真砂代 (まーちゃん)</h2>
+        <p>ここはサンプルプロフィールです。実際のサイト構造を参考にした静的テンプレートです。</p>
+        <p style="margin-top:10px;font-size:13px"><strong>SNS:</strong><br><a href="#">YouTube</a> • <a href="#">Instagram</a></p>
+      </aside>
+
+      <div class="content">
+        <section id="blog">
+          <article class="post">
+            <div class="meta">2025-07-12</div>
+            <h3>父との約束で気づいたこと</h3>
+            <p>短いリード文。ここは記事の抜粋を入れるエリアです。オリジナルの文章は転載していません。</p>
+            <p style="margin-top:8px"><a href="#">記事を読む →</a></p>
+          </article>
+
+          <article class="post">
+            <div class="meta">2025-07-05</div>
+            <h3>みんなで内側にもどろ！</h3>
+            <p>短いリード文。見た目の再現を目的としたサンプルです。</p>
+            <p style="margin-top:8px"><a href="#">記事を読む →</a></p>
+          </article>
+
+          <!-- 追加の投稿をここに置けます -->
+
+        </section>
+      </div>
+    </section>
+
+    <section id="links" style="margin-top:18px">
+      <h4>外部リンク</h4>
+      <ul>
+        <li><a href="#">メルマガ (Reservestock)</a></li>
+        <li><a href="#">音声配信</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">Copyright © スピ哲学であそぶBlog — Sample Clone</div>
+  </footer>
+
+  <!--
+    使い方メモ:
+    1) ファイル名を index.html にして GitHub リポジトリに追加します。
+    2) GitHub Pages を有効にすれば https://<your-username>.github.io/<repo>/ で公開できます。
+    3) 実際の画像や実コンテンツを入れる場合は /images フォルダを作って参照してください。
+  -->
+</body>
+</html>
